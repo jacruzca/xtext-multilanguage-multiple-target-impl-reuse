@@ -1,0 +1,20 @@
+grammar co.edu.unal.A.ADsl with org.eclipse.xtext.common.Terminals
+
+/**
+ * Example of A language. For POC purposes, I made this simple
+ */
+
+generate aDsl "http://www.edu.co/unal/A/ADsl"
+
+Model:
+	attributes+=ALowLevel*;
+	
+ALowLevel:
+	'I am A' name=ID '{'
+		properties+=ALowLevelProperty*
+	'}'
+;
+
+ALowLevelProperty:
+	'property' name=STRING type=STRING
+;
