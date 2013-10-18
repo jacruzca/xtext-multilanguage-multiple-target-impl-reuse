@@ -1,4 +1,23 @@
 xtext-multilanguage-multiple-target-impl-reuse
 ==============================================
 
-POC: Combining multiple languajes and multiple target implementations in Xtext
+work in progress ...
+
+
+Goal:
+-------------------------
+
+Implement multiple DSLs using XText. Some DSLs have references to others (0...n).
+
+Each languaje may have in turn multiple reference implementations, i.e., they have multiple templates (Xtend).
+
+
+Dependencies between languages
+-------------------------
+
+![alt tag](https://raw.github.com/jacruzca/xtext-multilanguage-multiple-target-impl-reuse/master/doc/dependencies_dsl.png)
+
+Note
+-------------------------
+
+This is just a POC
