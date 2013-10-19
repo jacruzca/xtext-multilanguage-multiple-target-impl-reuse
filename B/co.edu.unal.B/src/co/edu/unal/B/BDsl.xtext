@@ -1,0 +1,20 @@
+grammar co.edu.unal.B.BDsl with org.eclipse.xtext.common.Terminals
+
+generate bDsl "http://www.edu.co/unal/B/BDsl"
+
+Model:
+	bComponents+=Component+;
+	
+Component:
+	'component' name=STRING
+	'component-attributes' attributes+=ComponentAttribute*	
+	('relatedTo' relatedTo+=Component)*
+;
+
+ComponentAttribute:
+	type = Type
+;
+
+enum Type:
+	TYPE1 | TYPE2
+;
