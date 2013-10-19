@@ -8,7 +8,7 @@ Model:
 Component:
 	'component' name=STRING
 	'component-attributes' attributes+=ComponentAttribute*	
-	('relatedTo' relatedTo+=Component)*
+	('relatedTo' relatedTo+=[Component | STRING])*
 ;
 
 ComponentAttribute:
