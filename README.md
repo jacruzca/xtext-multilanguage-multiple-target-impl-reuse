@@ -9,8 +9,9 @@ Goal:
 
 Implement multiple DSLs using XText. Some DSLs have references to others (0...n).
 
-Each languaje may have in turn multiple reference implementations, i.e., they have multiple templates (Xtend).
+Each language may have in turn multiple reference implementations, i.e., they have multiple templates (Xtend).
 
+It means (at least for me) that I can "reuse" languages and templates. I hope.
 
 Dependencies between languages
 -------------------------
