@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/co.edu.unal.E/src-gen" editDirectory="/co.edu.unal.E.edit/src"
+    editorDirectory="/co.edu.unal.E.editor/src" modelPluginID="co.edu.unal.E" forceOverwrite="true"
+    modelName="EDsl" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="co.edu.unal.E.edit"
+    editorPluginID="co.edu.unal.E.editor" runtimeVersion="2.9" usedGenPackages="../../../co.edu.unal.B/model/generated/BDsl.genmodel#//bDsl">
+  <genPackages prefix="EDsl" basePackage="co.edu.unal.E" disposableProviderFactory="true"
+      fileExtensions="e" ecorePackage="EDsl.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EDsl.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="EDsl.ecore#//Type/ABS1"/>
+      <genEnumLiterals ecoreEnumLiteral="EDsl.ecore#//Type/ABS2"/>
+    </genEnums>
+    <genClasses ecoreClass="EDsl.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EDsl.ecore#//Model/abstractions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EDsl.ecore#//Model/dependencies"/>
+    </genClasses>
+    <genClasses ecoreClass="EDsl.ecore#//Abstraction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EDsl.ecore#//Abstraction/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EDsl.ecore#//Abstraction/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EDsl.ecore#//Abstraction/dependencies"/>
+    </genClasses>
+    <genClasses ecoreClass="EDsl.ecore#//Dependency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EDsl.ecore#//Dependency/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EDsl.ecore#//Dependency/relationship"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

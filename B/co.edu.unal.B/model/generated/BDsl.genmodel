@@ -17,7 +17,7 @@
     <genClasses ecoreClass="BDsl.ecore#//Component">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute BDsl.ecore#//Component/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference BDsl.ecore#//Component/attributes"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference BDsl.ecore#//Component/relatedTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference BDsl.ecore#//Component/relatedTo"/>
     </genClasses>
     <genClasses ecoreClass="BDsl.ecore#//ComponentAttribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute BDsl.ecore#//ComponentAttribute/type"/>

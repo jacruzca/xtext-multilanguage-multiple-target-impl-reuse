@@ -1,0 +1,25 @@
+grammar co.edu.unal.E.EDsl with org.eclipse.xtext.common.Terminals
+
+generate eDsl "http://www.edu.co/unal/E/EDsl"
+
+import "http://www.edu.co/unal/B/BDsl" as B
+
+Model:
+	abstractions+=Abstraction+
+	dependencies+=Dependency*
+;
+
+Abstraction:
+	'abstraction' name=ID '{'
+		type=Type
+		dependencies+=Dependency*
+	'}'
+;
+
+enum Type:
+	ABS1 | ABS2
+;
+	
+Dependency:
+	'dependency' name=ID 'relationship' relationship=[B::Component]
+;

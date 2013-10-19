@@ -9,8 +9,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
         eType="#//ComponentAttribute" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedTo" upperBound="-1"
-        eType="#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedTo" unique="false"
+        upperBound="-1" eType="#//Component"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ComponentAttribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//Type"/>
