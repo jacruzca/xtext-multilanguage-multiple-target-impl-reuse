@@ -1,0 +1,5 @@
+/bin
+/.launch/
+/.settings/
+/src-gen/
+/xtend-gen/
