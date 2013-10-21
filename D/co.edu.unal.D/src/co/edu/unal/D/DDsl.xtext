@@ -1,0 +1,20 @@
+grammar co.edu.unal.D.DDsl with org.eclipse.xtext.common.Terminals
+
+generate dDsl "http://www.edu.co/unal/D/DDsl"
+
+import "http://www.edu.co/unal/A/ADsl" as A
+
+Model:
+	packages+=Package*;
+	
+Package:
+	'package' name=STRING '{'
+		attrs+=PackageAttribute
+	'}'	
+;
+
+PackageAttribute:
+	'attr' name=STRING '{'
+		attrs += [A::ALowLevel]*
+	'}'
+;

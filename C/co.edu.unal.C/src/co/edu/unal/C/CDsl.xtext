@@ -1,0 +1,27 @@
+grammar co.edu.unal.C.CDsl with org.eclipse.xtext.common.Terminals
+
+generate cDsl "http://www.edu.co/unal/C/CDsl"
+
+import "http://www.edu.co/unal/A/ADsl" as A
+
+Model:
+	tos+=TO*
+	services+=Service*;
+
+TO:
+	'to' name=STRING '{'
+		'attribute' attrName=STRING type=TYPE
+	'}'
+;
+
+enum TYPE:
+	TYP1 | TYP2
+;
+	
+Service:
+	'service' name=ID '{'
+		 'returns' return=[TO | STRING]
+		 'totalParams' total=INT
+		 'paramsType' paramsType=[A::ALowLevel]
+	'}'
+;

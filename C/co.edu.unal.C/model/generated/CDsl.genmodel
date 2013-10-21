@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/co.edu.unal.C/src-gen" editDirectory="/co.edu.unal.C.edit/src"
+    editorDirectory="/co.edu.unal.C.editor/src" modelPluginID="co.edu.unal.C" forceOverwrite="true"
+    modelName="CDsl" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="co.edu.unal.C.edit"
+    editorPluginID="co.edu.unal.C.editor" runtimeVersion="2.9" usedGenPackages="../../../co.edu.unal.A/model/generated/ADsl.genmodel#//aDsl">
+  <genPackages prefix="CDsl" basePackage="co.edu.unal.C" disposableProviderFactory="true"
+      fileExtensions="c" ecorePackage="CDsl.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CDsl.ecore#//TYPE">
+      <genEnumLiterals ecoreEnumLiteral="CDsl.ecore#//TYPE/TYP1"/>
+      <genEnumLiterals ecoreEnumLiteral="CDsl.ecore#//TYPE/TYP2"/>
+    </genEnums>
+    <genClasses ecoreClass="CDsl.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CDsl.ecore#//Model/tos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CDsl.ecore#//Model/services"/>
+    </genClasses>
+    <genClasses ecoreClass="CDsl.ecore#//TO">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TO/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TO/attrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TO/type"/>
+    </genClasses>
+    <genClasses ecoreClass="CDsl.ecore#//Service">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//Service/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CDsl.ecore#//Service/return"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//Service/total"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CDsl.ecore#//Service/paramsType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
