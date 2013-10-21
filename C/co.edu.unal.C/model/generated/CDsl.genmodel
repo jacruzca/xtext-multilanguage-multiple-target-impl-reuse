@@ -17,8 +17,11 @@
     </genClasses>
     <genClasses ecoreClass="CDsl.ecore#//TO">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TO/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TO/attrName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TO/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CDsl.ecore#//TO/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="CDsl.ecore#//TOAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TOAttribute/attrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//TOAttribute/type"/>
     </genClasses>
     <genClasses ecoreClass="CDsl.ecore#//Service">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CDsl.ecore#//Service/name"/>

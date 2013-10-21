@@ -10,8 +10,12 @@ Model:
 
 TO:
 	'to' name=STRING '{'
-		'attribute' attrName=STRING type=TYPE
+		attributes+=TOAttribute*
 	'}'
+;
+
+TOAttribute:
+	'attribute' attrName=STRING type=TYPE
 ;
 
 enum TYPE:
