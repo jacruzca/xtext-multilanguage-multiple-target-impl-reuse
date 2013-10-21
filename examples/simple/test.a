@@ -1,0 +1,9 @@
+I am A Test {
+	property "prop1" "type1"
+	property "prop2" "type2"
+}
+
+I am A Test2 {
+	property "a1" "t1"
+	property "a2" "t2"
+}

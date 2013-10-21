@@ -1,0 +1,30 @@
+grammar co.edu.unal.G.GDsl with org.eclipse.xtext.common.Terminals
+
+generate gDsl "http://www.edu.co/unal/G/GDsl"
+
+import "http://www.edu.co/unal/D/DDsl" as D
+import "http://www.edu.co/unal/E/EDsl" as E
+
+Model:
+	config=Config
+	applications+=Aplication
+;
+Config:
+	'config' name=ID '{'
+		'project' project=STRING
+	'}'	
+;
+
+
+Aplication:
+	'application' name=STRING '{'
+		groups+=PackageGroup*
+		abstractions+=[E::Abstraction]*
+	'}'
+;
+
+PackageGroup:
+	'group' name=ID '{'
+		packages+=[D::Package]*
+	'}'
+;
