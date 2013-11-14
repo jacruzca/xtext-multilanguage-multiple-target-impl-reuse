@@ -1,0 +1,22 @@
+grammar co.edu.unal.F.FDsl with org.eclipse.xtext.common.Terminals
+
+generate fDsl "http://www.edu.co/unal/F/FDsl"
+
+import "http://www.edu.co/unal/C/CDsl" as C
+
+Model:
+	configs+=Config*;
+	
+Config:
+	'config' name=STRING '{'
+		'projectName' projectName=STRING
+		'version' version=STRING
+		services=Services
+	'}'
+;
+
+Services:
+	'services' name=STRING '{'
+		services+=[C::Service]*
+	'}'
+;

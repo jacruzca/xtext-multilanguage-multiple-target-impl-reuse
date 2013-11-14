@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/co.edu.unal.F/src-gen" editDirectory="/co.edu.unal.F.edit/src"
+    editorDirectory="/co.edu.unal.F.editor/src" modelPluginID="co.edu.unal.F" forceOverwrite="true"
+    modelName="FDsl" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="co.edu.unal.F.edit"
+    editorPluginID="co.edu.unal.F.editor" runtimeVersion="2.9" usedGenPackages="../../../co.edu.unal.C/model/generated/CDsl.genmodel#//cDsl">
+  <genPackages prefix="FDsl" basePackage="co.edu.unal.F" disposableProviderFactory="true"
+      fileExtensions="f" ecorePackage="FDsl.ecore#/">
+    <genClasses ecoreClass="FDsl.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FDsl.ecore#//Model/configs"/>
+    </genClasses>
+    <genClasses ecoreClass="FDsl.ecore#//Config">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FDsl.ecore#//Config/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FDsl.ecore#//Config/projectName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FDsl.ecore#//Config/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FDsl.ecore#//Config/services"/>
+    </genClasses>
+    <genClasses ecoreClass="FDsl.ecore#//Services">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FDsl.ecore#//Services/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FDsl.ecore#//Services/services"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
